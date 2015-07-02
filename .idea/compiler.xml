@@ -23,14 +23,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="commons" />
         <module name="distribution" />
         <module name="module1" />
+        <module name="module2" />
+        <module name="submodule" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commons" target="1.5" />
       <module name="distribution" target="1.5" />
       <module name="maven-slim-jar-sandbox" target="1.5" />
       <module name="module1" target="1.5" />
+      <module name="module2" target="1.5" />
+      <module name="submodule" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
